@@ -18,9 +18,12 @@ Model mengekstraksi kelompok tiga kata berurutan (trigram) untuk menangkap konte
 - **Identifikasi 10 Topik Teratas (Trigram)**
 Berdasarkan hasil ekstraksi CountVectorizer dengan parameter ngram_range=(3,3), ditemukan 10 kombinasi trigram dengan frekuensi kemunculan tertinggi.
 ![10 kombinasi trigram dengan frekuensi kemunculan tertinggi](asset/image/Picture1.png)
+<br>
 Jika diamati secara makna, sebagian besar trigram teratas berfokus pada ranah pencarian informasi layanan seperti keterlambatan, perubahan rute, pembaruan rute dan sebagainya. Keluhan operasional seperti kerusakan fasilitas pada halte Transjakarta.
 - **Distribusi Sentimen**
+<br>
 ![Distribusi Sentimen](asset/image/Picture2.png)
+<br>
 Hasil pelabelan menggunakan kamus InSet menunjukkan dominasi sentimen positif pada topik-topik teratas. Dominasi ini secara logis berkorelasi dengan sifat parameter trigram itu sendiri. Ekstraksi tiga kata spesifik (seperti "pantau informasi terkini") secara otomatis mengerucutkan sampel pada kelompok tweet dengan struktur kalimat formal atau informatif, di mana perbendaharaan kata pendampingnya cenderung memiliki bobot nilai netral hingga positif dalam kamus InSet.
 
 ### 4. Kesimpulan
